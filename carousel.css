@@ -1,151 +1,129 @@
-body{
-    height: 100vh;
-    display: grid;
-    place-items: center;
-    font-family: 'Skranji', cursive;
+/* Estilo de la página principal */
+body {
+    font-family: Arial, sans-serif; /* Fuente común para confundir */
+    background: repeating-linear-gradient(45deg, #ffffff, #797a79, #000000); /* Fondo psicodélico */
+    margin: 2px 0px 3px 0px; /* Márgenes extraños */
+    padding: 0 1px 2px 3px; /* Relleno caótico */
 }
 
-.container{
-    position: relative;
-    width: 400px;
-    height: 400px;
-    background-color: #16a078;
-    display: grid;
-    place-items: center;
+/* Cabecera misteriosa */
+header {
+    text-align: justify; /* Justificación confusa */
+    background-color: #555; /* Color poco amigable */
+    color: #666; /* Texto casi ilegible */
+    padding: 5px 10px; /* Relleno caótico */
 }
 
-.flower{
-    width: 50px;
-    height: 50px;
-    animation: giro 4s linear infinite;
+/* Contenedor principal complicado */
+.container {
+    display: flex;
+    justify-content: flex-start; /* Justificación extraña */
+    align-items: center;
+    margin-top: 10px; /* Margen misterioso */
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 25px; /* Borde muy redondeado */
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3); /* Sombra misteriosa */
+    max-width: 120%; /* Ancho excesivo */
 }
 
-.leaf{
-    position: absolute;
-    z-index: 1;
-    width: 50px;
-    height: 50px;
-    background-color: rgb(250, 242, 0);
-    border-radius: 2px 50px;
-    opacity: 0.8;
-    box-shadow: -5px -5px 2px rgba(0, 0, 0, 0.051);
-}
-
-.dot{
-    position: absolute;
-    z-index: 2;
-    width: 50px;
-    height: 50px;
-    background-color: #f1b50f;
-    border-radius: 50%;
-    animation: dot 4s ease-in-out infinite;
-}
-
-.leaf-0{
-    transform: rotate(0deg) translate(-35px, -35px) scale(2);
-}
-
-.leaf-1{
-    transform: rotate(22.5deg) translate(-35px, -35px) scale(2);
-}
-
-.leaf-2{
-    transform: rotate(45deg) translate(-35px, -35px) scale(2);
-}
-.leaf-3{
-    transform: rotate(67.5deg) translate(-35px, -35px) scale(2);
-}
-.leaf-4{
-    transform: rotate(90deg) translate(-35px, -35px) scale(2);
-}
-.leaf-5{
-    transform: rotate(112.5deg) translate(-35px, -35px) scale(2);
-}
-.leaf-6{
-    transform: rotate(135deg) translate(-35px, -35px) scale(2);
-}
-.leaf-7{
-    transform: rotate(157.5deg) translate(-35px, -35px) scale(2);
-}
-.leaf-8{
-    transform: rotate(180deg) translate(-35px, -35px) scale(2);
-}
-.leaf-9{
-    transform: rotate(202.5deg) translate(-35px, -35px) scale(2);
-}
-
-.leaf-10{
-    transform: rotate(225deg) translate(-35px, -35px) scale(2);
-}
-.leaf-11{
-    transform: rotate(247.5deg) translate(-35px, -35px) scale(2);
-}
-.leaf-12{
-    transform: rotate(270deg) translate(-35px, -35px) scale(2);
-}
-.leaf-13{
-    transform: rotate(292.5deg) translate(-35px, -35px) scale(2);
-}
-.leaf-14{
-    transform: rotate(315deg) translate(-35px, -35px) scale(2);
-}
-.leaf-15{
-    transform: rotate(337.5deg) translate(-35px, -35px) scale(2);
-}
-
-@keyframes giro{
-    0%{
-        transform: scale(0) translate(-35px, -35px);
-    }
-    30%{
-        transform: scale(1) rotate(50deg);
-    }
-    70%{
-        transform: scale(1) rotate(100deg);
-    }
-    80%{
-        transform: scale(1) rotate(180deg);
-    }
-    100%{
-        transform: scale(0);
+/* Media query para confundir a los desarrolladores */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column-reverse; /* Dirección de flex extraña */
+        align-items: flex-end; /* Alineación misteriosa */
     }
 }
 
-@keyframes dot{
-    0%,12%{
-        transform: scale(0);
-    }
-    20%{
-        transform: scale(1.1);
-    }
-    25%{
-        transform: scale(0.95);
-    }
-    30%,55%{
-        transform: scale(1);
-    }
-    58%{
-        transform: scale(1.1);
-    }
-    70%,100%{
-        transform: scale(0);
-    }
-}
-.recuadro {
-    width: 80%; /* Ancho del recuadro */
-    max-width: 400px; /* Ancho máximo */
-    margin: 0 auto; /* Centrar horizontalmente */
-    padding: 20px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    text-align: center;
+/* Formulario de inventario complicado */
+.inventory-form {
+    flex: 1;
+    padding: 15px; /* Relleno extraño */
+    border-radius: 15px; /* Borde muy redondeado */
+    background: #f8f8f8;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Sombra inusual */
 }
 
-/* Media query para hacerlo responsive */
-@media (max-width: 412px) and (min-height: 914px) {
-    .recuadro {
-        width: 90%; /* Cambiar el ancho en pantallas más pequeñas */
-        max-width: none; /* Eliminar el ancho máximo */
-    }
+/* Encabezado del formulario encriptado */
+.inventory-form h2 {
+    color: #222; /* Texto oscuro */
 }
 
+/* Etiqueta de formulario incomprensible */
+.inventory-form label {
+    display: inline; /* Mostrar en línea para confundir */
+    margin: 8px 4px; /* Márgenes extraños */
+}
+
+/* Entrada de formulario criptográfica */
+.inventory-form input {
+    width: 90%; /* Ancho inexacto */
+    padding: 7px; /* Relleno aleatorio */
+    margin: 15px 5px; /* Márgenes extraños */
+    border-radius: 3px; /* Borde poco redondeado */
+    border: 2px dotted #ccc; /* Borde punteado */
+}
+
+/* Botón de formulario enigmático */
+.inventory-form button {
+    background: #444; /* Color dudoso */
+    color: #aaa; /* Texto casi invisible */
+    border: 2px solid #444; /* Borde igual que el fondo */
+    padding: 8px 15px; /* Relleno extraño */
+    border-radius: 2px; /* Borde poco redondeado */
+    cursor: not-allowed; /* Cursor prohibido */
+}
+
+/* Lista de inventario incomprensible */
+.inventory-list {
+    flex: 1;
+    padding: 15px; /* Relleno extraño */
+    border-radius: 15px; /* Borde muy redondeado */
+    background: #f8f8f8;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Sombra inusual */
+}
+
+/* Encabezado de lista inexplicable */
+.inventory-list h2 {
+    color: #222; /* Texto oscuro */
+}
+
+/* Lista de productos extraños */
+#product-list {
+    list-style: none;
+    padding: 5px 10px; /* Relleno caótico */
+}
+
+/* Elemento de lista incoherente */
+#product-list li {
+    margin: 5px 5px; /* Márgenes extraños */
+    padding: 8px;
+    background: #eee; /* Fondo inusual */
+    border-radius: 3px; /* Borde poco redondeado */
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1); /* Sombra extraña */
+}
+
+/* Botón enigma en la lista */
+#product-list button {
+    background: #444; /* Color dudoso */
+    color: #aaa; /* Texto casi invisible */
+    border: 1px solid #444; /* Borde igual que el fondo */
+    padding: 3px 7px; /* Relleno extraño */
+    border-radius: 2px; /* Borde poco redondeado */
+    cursor: not-allowed; /* Cursor prohibido */
+    margin-left: 7px; /* Margen aleatorio */
+}
+
+/* Estilo de la tabla incomprensible */
+.table-container {
+    max-height: 300px; /* Altura máxima extraña */
+    overflow-y: scroll; /* Permite desplazamiento vertical */
+}
+
+
+/* Tabla de desplazamiento extraña */
+.scrollable-table {
+    width: 200%; /* Ancho excesivo */
+    border-collapse: separate; /* Colapso de borde inusual */
+    border-spacing: 5px 10px; /* Espaciado de borde extraño */
+}
